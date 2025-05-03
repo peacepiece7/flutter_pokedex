@@ -15,7 +15,7 @@ class ItemCategory extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
           decoration: ShapeDecoration(
             shape: const StadiumBorder(),
-            color: Colors.white.withOpacity(0.2),
+            color: Colors.white.withValues(alpha: 0.2),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,

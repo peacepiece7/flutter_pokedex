@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,95 +10,65 @@ part of 'item_state.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
 
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
 /// @nodoc
-mixin _$ItemState {
-  ItemStateStatus get status => throw _privateConstructorUsedError;
-  List<Item> get items => throw _privateConstructorUsedError;
-  int get selectedItemIndex => throw _privateConstructorUsedError;
-  int get page => throw _privateConstructorUsedError;
-  bool get canLoadMore => throw _privateConstructorUsedError;
-  Exception? get error => throw _privateConstructorUsedError;
+mixin _$ItemState implements DiagnosticableTreeMixin {
+  ItemStateStatus get status;
+  List<Item> get items;
+  int get selectedItemIndex;
+  int get page;
+  bool get canLoadMore;
+  Exception? get error;
 
-  @JsonKey(ignore: true)
-  $ItemStateCopyWith<ItemState> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ItemStateCopyWith<$Res> {
-  factory $ItemStateCopyWith(ItemState value, $Res Function(ItemState) then) =
-      _$ItemStateCopyWithImpl<$Res, ItemState>;
-  @useResult
-  $Res call(
-      {ItemStateStatus status,
-      List<Item> items,
-      int selectedItemIndex,
-      int page,
-      bool canLoadMore,
-      Exception? error});
-}
-
-/// @nodoc
-class _$ItemStateCopyWithImpl<$Res, $Val extends ItemState>
-    implements $ItemStateCopyWith<$Res> {
-  _$ItemStateCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of ItemState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $ItemStateCopyWith<ItemState> get copyWith =>
+      _$ItemStateCopyWithImpl<ItemState>(this as ItemState, _$identity);
+
   @override
-  $Res call({
-    Object? status = null,
-    Object? items = null,
-    Object? selectedItemIndex = null,
-    Object? page = null,
-    Object? canLoadMore = null,
-    Object? error = freezed,
-  }) {
-    return _then(_value.copyWith(
-      status: null == status
-          ? _value.status
-          : status // ignore: cast_nullable_to_non_nullable
-              as ItemStateStatus,
-      items: null == items
-          ? _value.items
-          : items // ignore: cast_nullable_to_non_nullable
-              as List<Item>,
-      selectedItemIndex: null == selectedItemIndex
-          ? _value.selectedItemIndex
-          : selectedItemIndex // ignore: cast_nullable_to_non_nullable
-              as int,
-      page: null == page
-          ? _value.page
-          : page // ignore: cast_nullable_to_non_nullable
-              as int,
-      canLoadMore: null == canLoadMore
-          ? _value.canLoadMore
-          : canLoadMore // ignore: cast_nullable_to_non_nullable
-              as bool,
-      error: freezed == error
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-              as Exception?,
-    ) as $Val);
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    properties
+      ..add(DiagnosticsProperty('type', 'ItemState'))
+      ..add(DiagnosticsProperty('status', status))
+      ..add(DiagnosticsProperty('items', items))
+      ..add(DiagnosticsProperty('selectedItemIndex', selectedItemIndex))
+      ..add(DiagnosticsProperty('page', page))
+      ..add(DiagnosticsProperty('canLoadMore', canLoadMore))
+      ..add(DiagnosticsProperty('error', error));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is ItemState &&
+            (identical(other.status, status) || other.status == status) &&
+            const DeepCollectionEquality().equals(other.items, items) &&
+            (identical(other.selectedItemIndex, selectedItemIndex) ||
+                other.selectedItemIndex == selectedItemIndex) &&
+            (identical(other.page, page) || other.page == page) &&
+            (identical(other.canLoadMore, canLoadMore) || other.canLoadMore == canLoadMore) &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, status, const DeepCollectionEquality().hash(items),
+      selectedItemIndex, page, canLoadMore, error);
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'ItemState(status: $status, items: $items, selectedItemIndex: $selectedItemIndex, page: $page, canLoadMore: $canLoadMore, error: $error)';
   }
 }
 
 /// @nodoc
-abstract class _$$ItemStateImplCopyWith<$Res>
-    implements $ItemStateCopyWith<$Res> {
-  factory _$$ItemStateImplCopyWith(
-          _$ItemStateImpl value, $Res Function(_$ItemStateImpl) then) =
-      __$$ItemStateImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $ItemStateCopyWith<$Res> {
+  factory $ItemStateCopyWith(ItemState value, $Res Function(ItemState) _then) =
+      _$ItemStateCopyWithImpl;
   @useResult
   $Res call(
       {ItemStateStatus status,
@@ -109,13 +80,14 @@ abstract class _$$ItemStateImplCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$ItemStateImplCopyWithImpl<$Res>
-    extends _$ItemStateCopyWithImpl<$Res, _$ItemStateImpl>
-    implements _$$ItemStateImplCopyWith<$Res> {
-  __$$ItemStateImplCopyWithImpl(
-      _$ItemStateImpl _value, $Res Function(_$ItemStateImpl) _then)
-      : super(_value, _then);
+class _$ItemStateCopyWithImpl<$Res> implements $ItemStateCopyWith<$Res> {
+  _$ItemStateCopyWithImpl(this._self, this._then);
 
+  final ItemState _self;
+  final $Res Function(ItemState) _then;
+
+  /// Create a copy of ItemState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -126,29 +98,29 @@ class __$$ItemStateImplCopyWithImpl<$Res>
     Object? canLoadMore = null,
     Object? error = freezed,
   }) {
-    return _then(_$ItemStateImpl(
+    return _then(_self.copyWith(
       status: null == status
-          ? _value.status
+          ? _self.status
           : status // ignore: cast_nullable_to_non_nullable
               as ItemStateStatus,
       items: null == items
-          ? _value._items
+          ? _self.items
           : items // ignore: cast_nullable_to_non_nullable
               as List<Item>,
       selectedItemIndex: null == selectedItemIndex
-          ? _value.selectedItemIndex
+          ? _self.selectedItemIndex
           : selectedItemIndex // ignore: cast_nullable_to_non_nullable
               as int,
       page: null == page
-          ? _value.page
+          ? _self.page
           : page // ignore: cast_nullable_to_non_nullable
               as int,
       canLoadMore: null == canLoadMore
-          ? _value.canLoadMore
+          ? _self.canLoadMore
           : canLoadMore // ignore: cast_nullable_to_non_nullable
               as bool,
       error: freezed == error
-          ? _value.error
+          ? _self.error
           : error // ignore: cast_nullable_to_non_nullable
               as Exception?,
     ));
@@ -157,8 +129,8 @@ class __$$ItemStateImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ItemStateImpl extends _ItemState with DiagnosticableTreeMixin {
-  const _$ItemStateImpl(
+class _ItemState extends ItemState with DiagnosticableTreeMixin {
+  const _ItemState(
       {this.status = ItemStateStatus.initial,
       final List<Item> items = const [],
       this.selectedItemIndex = 0,
@@ -192,14 +164,16 @@ class _$ItemStateImpl extends _ItemState with DiagnosticableTreeMixin {
   @override
   final Exception? error;
 
+  /// Create a copy of ItemState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'ItemState(status: $status, items: $items, selectedItemIndex: $selectedItemIndex, page: $page, canLoadMore: $canLoadMore, error: $error)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ItemStateCopyWith<_ItemState> get copyWith =>
+      __$ItemStateCopyWithImpl<_ItemState>(this, _$identity);
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
     properties
       ..add(DiagnosticsProperty('type', 'ItemState'))
       ..add(DiagnosticsProperty('status', status))
@@ -214,58 +188,87 @@ class _$ItemStateImpl extends _ItemState with DiagnosticableTreeMixin {
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ItemStateImpl &&
+            other is _ItemState &&
             (identical(other.status, status) || other.status == status) &&
             const DeepCollectionEquality().equals(other._items, _items) &&
             (identical(other.selectedItemIndex, selectedItemIndex) ||
                 other.selectedItemIndex == selectedItemIndex) &&
             (identical(other.page, page) || other.page == page) &&
-            (identical(other.canLoadMore, canLoadMore) ||
-                other.canLoadMore == canLoadMore) &&
+            (identical(other.canLoadMore, canLoadMore) || other.canLoadMore == canLoadMore) &&
             (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      status,
-      const DeepCollectionEquality().hash(_items),
-      selectedItemIndex,
-      page,
-      canLoadMore,
-      error);
+  int get hashCode => Object.hash(runtimeType, status, const DeepCollectionEquality().hash(_items),
+      selectedItemIndex, page, canLoadMore, error);
 
-  @JsonKey(ignore: true)
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'ItemState(status: $status, items: $items, selectedItemIndex: $selectedItemIndex, page: $page, canLoadMore: $canLoadMore, error: $error)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$ItemStateCopyWith<$Res> implements $ItemStateCopyWith<$Res> {
+  factory _$ItemStateCopyWith(_ItemState value, $Res Function(_ItemState) _then) =
+      __$ItemStateCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {ItemStateStatus status,
+      List<Item> items,
+      int selectedItemIndex,
+      int page,
+      bool canLoadMore,
+      Exception? error});
+}
+
+/// @nodoc
+class __$ItemStateCopyWithImpl<$Res> implements _$ItemStateCopyWith<$Res> {
+  __$ItemStateCopyWithImpl(this._self, this._then);
+
+  final _ItemState _self;
+  final $Res Function(_ItemState) _then;
+
+  /// Create a copy of ItemState
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$ItemStateImplCopyWith<_$ItemStateImpl> get copyWith =>
-      __$$ItemStateImplCopyWithImpl<_$ItemStateImpl>(this, _$identity);
+  $Res call({
+    Object? status = null,
+    Object? items = null,
+    Object? selectedItemIndex = null,
+    Object? page = null,
+    Object? canLoadMore = null,
+    Object? error = freezed,
+  }) {
+    return _then(_ItemState(
+      status: null == status
+          ? _self.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as ItemStateStatus,
+      items: null == items
+          ? _self._items
+          : items // ignore: cast_nullable_to_non_nullable
+              as List<Item>,
+      selectedItemIndex: null == selectedItemIndex
+          ? _self.selectedItemIndex
+          : selectedItemIndex // ignore: cast_nullable_to_non_nullable
+              as int,
+      page: null == page
+          ? _self.page
+          : page // ignore: cast_nullable_to_non_nullable
+              as int,
+      canLoadMore: null == canLoadMore
+          ? _self.canLoadMore
+          : canLoadMore // ignore: cast_nullable_to_non_nullable
+              as bool,
+      error: freezed == error
+          ? _self.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as Exception?,
+    ));
+  }
 }
 
-abstract class _ItemState extends ItemState {
-  const factory _ItemState(
-      {final ItemStateStatus status,
-      final List<Item> items,
-      final int selectedItemIndex,
-      final int page,
-      final bool canLoadMore,
-      final Exception? error}) = _$ItemStateImpl;
-  const _ItemState._() : super._();
-
-  @override
-  ItemStateStatus get status;
-  @override
-  List<Item> get items;
-  @override
-  int get selectedItemIndex;
-  @override
-  int get page;
-  @override
-  bool get canLoadMore;
-  @override
-  Exception? get error;
-  @override
-  @JsonKey(ignore: true)
-  _$$ItemStateImplCopyWith<_$ItemStateImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

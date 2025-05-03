@@ -66,7 +66,7 @@ class ModalContentsState extends State<ModalContents> {
                 image: Assets.images.pokeball.provider(),
                 width: 30,
                 height: 30,
-                color: pokeType.color.withOpacity(0.5),
+                color: pokeType.color.withValues(alpha: 0.5),
               ),
             ),
             Padding(
@@ -116,7 +116,7 @@ class ModalContentsState extends State<ModalContents> {
                 image: Assets.images.pokeball.provider(),
                 width: 30,
                 height: 30,
-                color: pokeType.color.withOpacity(0.5),
+                color: pokeType.color.withValues(alpha: 0.5),
               ),
             ),
             Padding(

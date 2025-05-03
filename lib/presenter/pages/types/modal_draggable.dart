@@ -23,7 +23,7 @@ class ModalDraggable extends StatelessWidget {
         builder: (b, s) {
           return Container(
             decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.background,
+                color: Theme.of(context).colorScheme.surface,
                 borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(20), topRight: Radius.circular(20))),
             child: Stack(
@@ -33,7 +33,7 @@ class ModalDraggable extends StatelessWidget {
                     image: Assets.images.pokeball.provider(),
                     width: width / 2,
                     height: width / 2,
-                    color: AppColors.black.withOpacity(0.1),
+                    color: AppColors.black.withValues(alpha: 0.1),
                   ),
                 ),
                 ModalContents(index: index, width: width, scroller: s), //type_listview

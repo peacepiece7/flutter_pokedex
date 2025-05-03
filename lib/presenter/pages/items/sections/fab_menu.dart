@@ -73,7 +73,7 @@ class _FabMenuState extends State<_FabMenu> with SingleTickerProviderStateMixin 
 
     return AnimatedOverlay(
       animation: _fabAnimation,
-      color: Theme.of(context).colorScheme.background,
+      color: Theme.of(context).colorScheme.surface,
       onPress: _toggleFabMenu,
       child: Container(
         alignment: Alignment.bottomRight,

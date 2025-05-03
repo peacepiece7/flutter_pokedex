@@ -6,8 +6,7 @@ part of 'pokemon.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$PokemonImpl _$$PokemonImplFromJson(Map<String, dynamic> json) =>
-    _$PokemonImpl(
+_Pokemon _$PokemonFromJson(Map<String, dynamic> json) => _Pokemon(
       number: json['number'] as String,
       name: json['name'] as String,
       description: json['description'] as String,
@@ -18,8 +17,7 @@ _$PokemonImpl _$$PokemonImplFromJson(Map<String, dynamic> json) =>
       height: json['height'] as String,
       weight: json['weight'] as String,
       genera: json['genera'] as String,
-      eggGroups:
-          (json['eggGroups'] as List<dynamic>).map((e) => e as String).toList(),
+      eggGroups: (json['eggGroups'] as List<dynamic>).map((e) => e as String).toList(),
       gender: PokemonGender.fromJson(json['gender'] as Map<String, dynamic>),
       stats: PokemonStats.fromJson(json['stats'] as Map<String, dynamic>),
       baseExp: (json['baseExp'] as num).toDouble(),
@@ -29,8 +27,7 @@ _$PokemonImpl _$$PokemonImplFromJson(Map<String, dynamic> json) =>
       evolutionReason: json['evolutionReason'] as String,
     );
 
-Map<String, dynamic> _$$PokemonImplToJson(_$PokemonImpl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$PokemonToJson(_Pokemon instance) => <String, dynamic>{
       'number': instance.number,
       'name': instance.name,
       'description': instance.description,

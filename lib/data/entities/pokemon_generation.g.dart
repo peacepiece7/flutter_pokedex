@@ -6,18 +6,12 @@ part of 'pokemon_generation.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$PokemonGenerationImpl _$$PokemonGenerationImplFromJson(
-        Map<String, dynamic> json) =>
-    _$PokemonGenerationImpl(
+_PokemonGeneration _$PokemonGenerationFromJson(Map<String, dynamic> json) => _PokemonGeneration(
       title: json['title'] as String,
-      pokemonImages: (json['pokemonImages'] as List<dynamic>)
-          .map((e) => e as String)
-          .toList(),
+      pokemonImages: (json['pokemonImages'] as List<dynamic>).map((e) => e as String).toList(),
     );
 
-Map<String, dynamic> _$$PokemonGenerationImplToJson(
-        _$PokemonGenerationImpl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$PokemonGenerationToJson(_PokemonGeneration instance) => <String, dynamic>{
       'title': instance.title,
       'pokemonImages': instance.pokemonImages,
     };

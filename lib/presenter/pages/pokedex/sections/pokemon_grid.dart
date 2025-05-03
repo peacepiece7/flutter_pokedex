@@ -27,7 +27,6 @@ class _PokemonGridState extends State<_PokemonGrid> {
   @override
   void dispose() {
     _scrollKey.currentState?.innerController.dispose();
-    _scrollKey.currentState?.dispose();
 
     super.dispose();
   }

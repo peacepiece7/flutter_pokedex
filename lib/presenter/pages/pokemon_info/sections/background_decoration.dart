@@ -19,8 +19,8 @@ class _BoxDecoration extends StatelessWidget {
             begin: const Alignment(-0.2, -0.2),
             end: const Alignment(1.5, -0.3),
             colors: [
-              Colors.white.withOpacity(0.3),
-              Colors.white.withOpacity(0),
+              Colors.white.withValues(alpha: 0.3),
+              Colors.white.withValues(alpha: 0),
             ],
           ),
         ),

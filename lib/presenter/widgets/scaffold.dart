@@ -70,7 +70,7 @@ class PositionedPokeball extends StatelessWidget {
         image: Assets.images.pokeball.provider(),
         width: pokeballSize,
         height: pokeballSize,
-        color: context.colors.text.withOpacity(0.05),
+        color: context.colors.text.withValues(alpha: 0.05),
       ),
     );
   }

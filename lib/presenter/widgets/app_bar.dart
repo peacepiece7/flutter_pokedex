@@ -122,7 +122,7 @@ class AppMovingTitleSliverAppBar extends SliverAppBar {
               final dx = startX + endX - endX * percent;
 
               return Container(
-                color: context.colors.background.withOpacity(0.8 - percent * 0.8),
+                color: context.colors.background.withValues(alpha: 0.8 - percent * 0.8),
                 child: Stack(
                   fit: StackFit.expand,
                   children: <Widget>[
@@ -182,7 +182,7 @@ class AppBarBackButton extends StatelessWidget {
 
     return IconButton(
       padding: AppAppBar.padding,
-      onPressed: onPressed ?? context.router.pop,
+      onPressed: onPressed ?? context.router.maybePop,
       icon: icon,
     );
   }

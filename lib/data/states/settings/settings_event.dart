@@ -5,6 +5,6 @@ import 'package:pokedex/presenter/themes/themes.dart';
 part 'settings_event.freezed.dart';
 
 @freezed
-class SettingsEvent with _$SettingsEvent {
+sealed class SettingsEvent with _$SettingsEvent {
   const factory SettingsEvent.themeChanged(AppTheme theme) = SettingsThemeChanged;
 }

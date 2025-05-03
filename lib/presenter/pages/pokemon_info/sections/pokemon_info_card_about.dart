@@ -10,7 +10,7 @@ class _Label extends StatelessWidget {
     return Text(
       text,
       style: TextStyle(
-        color: Theme.of(context).colorScheme.onBackground.withOpacity(0.6),
+        color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.6),
         height: 0.8,
       ),
     );

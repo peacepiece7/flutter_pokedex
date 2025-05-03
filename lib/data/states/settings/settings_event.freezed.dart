@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,112 +10,69 @@ part of 'settings_event.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
 
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
 /// @nodoc
-mixin _$SettingsEvent {
-  AppTheme get theme => throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(AppTheme theme) themeChanged,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppTheme theme)? themeChanged,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppTheme theme)? themeChanged,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(SettingsThemeChanged value) themeChanged,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(SettingsThemeChanged value)? themeChanged,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(SettingsThemeChanged value)? themeChanged,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
+mixin _$SettingsEvent implements DiagnosticableTreeMixin {
+  AppTheme get theme;
 
-  @JsonKey(ignore: true)
-  $SettingsEventCopyWith<SettingsEvent> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $SettingsEventCopyWith<$Res> {
-  factory $SettingsEventCopyWith(
-          SettingsEvent value, $Res Function(SettingsEvent) then) =
-      _$SettingsEventCopyWithImpl<$Res, SettingsEvent>;
-  @useResult
-  $Res call({AppTheme theme});
-}
-
-/// @nodoc
-class _$SettingsEventCopyWithImpl<$Res, $Val extends SettingsEvent>
-    implements $SettingsEventCopyWith<$Res> {
-  _$SettingsEventCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of SettingsEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $SettingsEventCopyWith<SettingsEvent> get copyWith =>
+      _$SettingsEventCopyWithImpl<SettingsEvent>(this as SettingsEvent, _$identity);
+
   @override
-  $Res call({
-    Object? theme = null,
-  }) {
-    return _then(_value.copyWith(
-      theme: null == theme
-          ? _value.theme
-          : theme // ignore: cast_nullable_to_non_nullable
-              as AppTheme,
-    ) as $Val);
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    properties
+      ..add(DiagnosticsProperty('type', 'SettingsEvent'))
+      ..add(DiagnosticsProperty('theme', theme));
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is SettingsEvent &&
+            (identical(other.theme, theme) || other.theme == theme));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, theme);
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'SettingsEvent(theme: $theme)';
   }
 }
 
 /// @nodoc
-abstract class _$$SettingsThemeChangedImplCopyWith<$Res>
-    implements $SettingsEventCopyWith<$Res> {
-  factory _$$SettingsThemeChangedImplCopyWith(_$SettingsThemeChangedImpl value,
-          $Res Function(_$SettingsThemeChangedImpl) then) =
-      __$$SettingsThemeChangedImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $SettingsEventCopyWith<$Res> {
+  factory $SettingsEventCopyWith(SettingsEvent value, $Res Function(SettingsEvent) _then) =
+      _$SettingsEventCopyWithImpl;
   @useResult
   $Res call({AppTheme theme});
 }
 
 /// @nodoc
-class __$$SettingsThemeChangedImplCopyWithImpl<$Res>
-    extends _$SettingsEventCopyWithImpl<$Res, _$SettingsThemeChangedImpl>
-    implements _$$SettingsThemeChangedImplCopyWith<$Res> {
-  __$$SettingsThemeChangedImplCopyWithImpl(_$SettingsThemeChangedImpl _value,
-      $Res Function(_$SettingsThemeChangedImpl) _then)
-      : super(_value, _then);
+class _$SettingsEventCopyWithImpl<$Res> implements $SettingsEventCopyWith<$Res> {
+  _$SettingsEventCopyWithImpl(this._self, this._then);
 
+  final SettingsEvent _self;
+  final $Res Function(SettingsEvent) _then;
+
+  /// Create a copy of SettingsEvent
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? theme = null,
   }) {
-    return _then(_$SettingsThemeChangedImpl(
-      null == theme
-          ? _value.theme
+    return _then(_self.copyWith(
+      theme: null == theme
+          ? _self.theme
           : theme // ignore: cast_nullable_to_non_nullable
               as AppTheme,
     ));
@@ -123,22 +81,22 @@ class __$$SettingsThemeChangedImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$SettingsThemeChangedImpl
-    with DiagnosticableTreeMixin
-    implements SettingsThemeChanged {
-  const _$SettingsThemeChangedImpl(this.theme);
+class SettingsThemeChanged with DiagnosticableTreeMixin implements SettingsEvent {
+  const SettingsThemeChanged(this.theme);
 
   @override
   final AppTheme theme;
 
+  /// Create a copy of SettingsEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'SettingsEvent.themeChanged(theme: $theme)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  $SettingsThemeChangedCopyWith<SettingsThemeChanged> get copyWith =>
+      _$SettingsThemeChangedCopyWithImpl<SettingsThemeChanged>(this, _$identity);
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
-    super.debugFillProperties(properties);
     properties
       ..add(DiagnosticsProperty('type', 'SettingsEvent.themeChanged'))
       ..add(DiagnosticsProperty('theme', theme));
@@ -148,86 +106,50 @@ class _$SettingsThemeChangedImpl
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SettingsThemeChangedImpl &&
+            other is SettingsThemeChanged &&
             (identical(other.theme, theme) || other.theme == theme));
   }
 
   @override
   int get hashCode => Object.hash(runtimeType, theme);
 
-  @JsonKey(ignore: true)
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'SettingsEvent.themeChanged(theme: $theme)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $SettingsThemeChangedCopyWith<$Res> implements $SettingsEventCopyWith<$Res> {
+  factory $SettingsThemeChangedCopyWith(
+          SettingsThemeChanged value, $Res Function(SettingsThemeChanged) _then) =
+      _$SettingsThemeChangedCopyWithImpl;
+  @override
+  @useResult
+  $Res call({AppTheme theme});
+}
+
+/// @nodoc
+class _$SettingsThemeChangedCopyWithImpl<$Res> implements $SettingsThemeChangedCopyWith<$Res> {
+  _$SettingsThemeChangedCopyWithImpl(this._self, this._then);
+
+  final SettingsThemeChanged _self;
+  final $Res Function(SettingsThemeChanged) _then;
+
+  /// Create a copy of SettingsEvent
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$SettingsThemeChangedImplCopyWith<_$SettingsThemeChangedImpl>
-      get copyWith =>
-          __$$SettingsThemeChangedImplCopyWithImpl<_$SettingsThemeChangedImpl>(
-              this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function(AppTheme theme) themeChanged,
+  $Res call({
+    Object? theme = null,
   }) {
-    return themeChanged(theme);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(AppTheme theme)? themeChanged,
-  }) {
-    return themeChanged?.call(theme);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function(AppTheme theme)? themeChanged,
-    required TResult orElse(),
-  }) {
-    if (themeChanged != null) {
-      return themeChanged(theme);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(SettingsThemeChanged value) themeChanged,
-  }) {
-    return themeChanged(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(SettingsThemeChanged value)? themeChanged,
-  }) {
-    return themeChanged?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(SettingsThemeChanged value)? themeChanged,
-    required TResult orElse(),
-  }) {
-    if (themeChanged != null) {
-      return themeChanged(this);
-    }
-    return orElse();
+    return _then(SettingsThemeChanged(
+      null == theme
+          ? _self.theme
+          : theme // ignore: cast_nullable_to_non_nullable
+              as AppTheme,
+    ));
   }
 }
 
-abstract class SettingsThemeChanged implements SettingsEvent {
-  const factory SettingsThemeChanged(final AppTheme theme) =
-      _$SettingsThemeChangedImpl;
-
-  @override
-  AppTheme get theme;
-  @override
-  @JsonKey(ignore: true)
-  _$$SettingsThemeChangedImplCopyWith<_$SettingsThemeChangedImpl>
-      get copyWith => throw _privateConstructorUsedError;
-}
+// dart format on

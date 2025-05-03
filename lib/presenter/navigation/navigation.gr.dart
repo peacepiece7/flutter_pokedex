@@ -1,3 +1,4 @@
+// dart format width=80
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
 // **************************************************************************
@@ -9,97 +10,52 @@
 
 part of 'navigation.dart';
 
-abstract class _$AppRouter extends RootStackRouter {
-  // ignore: unused_element
-  _$AppRouter({super.navigatorKey});
-
-  @override
-  final Map<String, PageFactory> pagesMap = {
-    HomeRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const HomePage(),
-      );
-    },
-    ItemsRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ItemsPage(),
-      );
-    },
-    PokedexRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const PokedexPage(),
-      );
-    },
-    PokemonInfoRoute.name: (routeData) {
-      final pathParams = routeData.inheritedPathParams;
-      final args = routeData.argsAs<PokemonInfoRouteArgs>(
-          orElse: () => PokemonInfoRouteArgs(id: pathParams.getString('id')));
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: PokemonInfoPage(
-          key: args.key,
-          id: args.id,
-        ),
-      );
-    },
-    SplashRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SplashPage(),
-      );
-    },
-    TypeEffectRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const TypeEffectPage(),
-      );
-    },
-  };
-}
-
 /// generated route for
 /// [HomePage]
 class HomeRoute extends PageRouteInfo<void> {
   const HomeRoute({List<PageRouteInfo>? children})
-      : super(
-          HomeRoute.name,
-          initialChildren: children,
-        );
+      : super(HomeRoute.name, initialChildren: children);
 
   static const String name = 'HomeRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const HomePage();
+    },
+  );
 }
 
 /// generated route for
 /// [ItemsPage]
 class ItemsRoute extends PageRouteInfo<void> {
   const ItemsRoute({List<PageRouteInfo>? children})
-      : super(
-          ItemsRoute.name,
-          initialChildren: children,
-        );
+      : super(ItemsRoute.name, initialChildren: children);
 
   static const String name = 'ItemsRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ItemsPage();
+    },
+  );
 }
 
 /// generated route for
 /// [PokedexPage]
 class PokedexRoute extends PageRouteInfo<void> {
   const PokedexRoute({List<PageRouteInfo>? children})
-      : super(
-          PokedexRoute.name,
-          initialChildren: children,
-        );
+      : super(PokedexRoute.name, initialChildren: children);
 
   static const String name = 'PokedexRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const PokedexPage();
+    },
+  );
 }
 
 /// generated route for
@@ -111,25 +67,27 @@ class PokemonInfoRoute extends PageRouteInfo<PokemonInfoRouteArgs> {
     List<PageRouteInfo>? children,
   }) : super(
           PokemonInfoRoute.name,
-          args: PokemonInfoRouteArgs(
-            key: key,
-            id: id,
-          ),
+          args: PokemonInfoRouteArgs(key: key, id: id),
           rawPathParams: {'id': id},
           initialChildren: children,
         );
 
   static const String name = 'PokemonInfoRoute';
 
-  static const PageInfo<PokemonInfoRouteArgs> page =
-      PageInfo<PokemonInfoRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final pathParams = data.inheritedPathParams;
+      final args = data.argsAs<PokemonInfoRouteArgs>(
+        orElse: () => PokemonInfoRouteArgs(id: pathParams.getString('id')),
+      );
+      return PokemonInfoPage(key: args.key, id: args.id);
+    },
+  );
 }
 
 class PokemonInfoRouteArgs {
-  const PokemonInfoRouteArgs({
-    this.key,
-    required this.id,
-  });
+  const PokemonInfoRouteArgs({this.key, required this.id});
 
   final Key? key;
 
@@ -145,26 +103,30 @@ class PokemonInfoRouteArgs {
 /// [SplashPage]
 class SplashRoute extends PageRouteInfo<void> {
   const SplashRoute({List<PageRouteInfo>? children})
-      : super(
-          SplashRoute.name,
-          initialChildren: children,
-        );
+      : super(SplashRoute.name, initialChildren: children);
 
   static const String name = 'SplashRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SplashPage();
+    },
+  );
 }
 
 /// generated route for
 /// [TypeEffectPage]
 class TypeEffectRoute extends PageRouteInfo<void> {
   const TypeEffectRoute({List<PageRouteInfo>? children})
-      : super(
-          TypeEffectRoute.name,
-          initialChildren: children,
-        );
+      : super(TypeEffectRoute.name, initialChildren: children);
 
   static const String name = 'TypeEffectRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const TypeEffectPage();
+    },
+  );
 }

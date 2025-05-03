@@ -23,7 +23,9 @@ class Stat extends StatelessWidget {
           flex: 2,
           child: Text(
             label,
-            style: TextStyle(color: Theme.of(context).textTheme.bodySmall!.color!.withOpacity(0.6)),
+            style: TextStyle(
+              color: Theme.of(context).textTheme.bodySmall!.color!.withValues(alpha: 0.6),
+            ),
           ),
         ),
         Expanded(
@@ -122,7 +124,7 @@ class _PokemonBaseStatsState extends State<_PokemonBaseStats> with SingleTickerP
           const SizedBox(height: 15),
           Text(
             'The effectiveness of each type on ${pokemon.name}.',
-            style: TextStyle(color: AppColors.black.withOpacity(0.6)),
+            style: TextStyle(color: AppColors.black.withValues(alpha: 0.6)),
           ),
           const SizedBox(height: 15),
           _buildEffectivenesses(pokemon.typeEffectiveness),

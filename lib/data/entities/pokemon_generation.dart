@@ -5,7 +5,7 @@ part 'pokemon_generation.freezed.dart';
 part 'pokemon_generation.g.dart';
 
 @freezed
-class PokemonGeneration with _$PokemonGeneration {
+abstract class PokemonGeneration with _$PokemonGeneration {
   const factory PokemonGeneration({
     required String title,
     required List<String> pokemonImages,

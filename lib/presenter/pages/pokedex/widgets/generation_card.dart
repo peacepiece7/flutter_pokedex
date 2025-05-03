@@ -60,7 +60,7 @@ class GenerationCard extends StatelessWidget {
                 image: Assets.images.pokeball.provider(),
                 width: height * 0.754,
                 height: height * 0.754,
-                color: AppColors.black.withOpacity(0.05),
+                color: AppColors.black.withValues(alpha: 0.05),
               ),
             ),
           ],

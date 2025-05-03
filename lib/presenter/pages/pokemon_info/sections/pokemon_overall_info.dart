@@ -235,7 +235,7 @@ class _PokemonOverallInfoState extends State<_PokemonOverallInfo> with TickerPro
                   image: Assets.images.pokeball.provider(),
                   width: pokeballSize,
                   height: pokeballSize,
-                  color: context.colors.background.withOpacity(0.12),
+                  color: context.colors.background.withValues(alpha: 0.12),
                 ),
               ),
             ),

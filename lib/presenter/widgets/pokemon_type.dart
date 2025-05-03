@@ -27,7 +27,7 @@ class PokemonType extends StatelessWidget {
         ),
         decoration: ShapeDecoration(
           shape: const StadiumBorder(),
-          color: (colored ? type.color : context.colors.background).withOpacity(0.3),
+          color: (colored ? type.color : context.colors.background).withValues(alpha: 0.3),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,

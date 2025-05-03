@@ -6,15 +6,14 @@ part of 'item.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ItemImpl _$$ItemImplFromJson(Map<String, dynamic> json) => _$ItemImpl(
+_Item _$ItemFromJson(Map<String, dynamic> json) => _Item(
       name: json['name'] as String,
       image: json['image'] as String,
       category: json['category'] as String,
       effect: json['effect'] as String,
     );
 
-Map<String, dynamic> _$$ItemImplToJson(_$ItemImpl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$ItemToJson(_Item instance) => <String, dynamic>{
       'name': instance.name,
       'image': instance.image,
       'category': instance.category,

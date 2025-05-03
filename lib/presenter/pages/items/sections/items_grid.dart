@@ -27,7 +27,6 @@ class _ItemGridState extends State<_ItemGrid> {
   @override
   void dispose() {
     _scrollKey.currentState?.innerController.dispose();
-    _scrollKey.currentState?.dispose();
 
     super.dispose();
   }

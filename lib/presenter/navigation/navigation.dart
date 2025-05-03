@@ -10,7 +10,7 @@ import 'package:pokedex/presenter/pages/types/types.dart';
 part 'navigation.gr.dart';
 
 @AutoRouterConfig()
-class AppRouter extends _$AppRouter {
+class AppRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
         AutoRoute(path: '/', page: SplashRoute.page),

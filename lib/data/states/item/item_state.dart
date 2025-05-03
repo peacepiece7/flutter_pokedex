@@ -13,7 +13,7 @@ enum ItemStateStatus {
 }
 
 @freezed
-class ItemState with _$ItemState {
+abstract class ItemState with _$ItemState {
   const factory ItemState({
     @Default(ItemStateStatus.initial) ItemStateStatus status,
     @Default([]) List<Item> items,

@@ -5,7 +5,7 @@ part 'pokemon_properties.freezed.dart';
 part 'pokemon_properties.g.dart';
 
 @freezed
-class PokemonGender with _$PokemonGender {
+abstract class PokemonGender with _$PokemonGender {
   const factory PokemonGender({
     required bool genderless,
     required double maleRate,
@@ -16,7 +16,7 @@ class PokemonGender with _$PokemonGender {
 }
 
 @freezed
-class PokemonStats with _$PokemonStats {
+abstract class PokemonStats with _$PokemonStats {
   const factory PokemonStats({
     required int attack,
     required int specialAttack,

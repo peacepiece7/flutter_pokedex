@@ -99,7 +99,7 @@ class _CircleDecorator extends StatelessWidget {
       offset: Offset(-size * 0.5, -size * 0.6),
       child: CircleAvatar(
         radius: size / 2,
-        backgroundColor: Colors.white.withOpacity(0.14),
+        backgroundColor: Colors.white.withValues(alpha: 0.14),
       ),
     );
   }
@@ -118,7 +118,7 @@ class _PokeballDecorator extends StatelessWidget {
         'assets/images/pokeball.png',
         width: size,
         height: size,
-        color: Colors.white.withOpacity(0.14),
+        color: Colors.white.withValues(alpha: 0.14),
         fit: BoxFit.contain,
       ),
     );

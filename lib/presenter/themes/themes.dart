@@ -54,10 +54,10 @@ class AppTheme extends ThemeExtension<AppTheme> {
           foregroundColor: colors.text,
           surfaceTintColor: colors.text,
         ),
-        tabBarTheme: TabBarTheme(
-          labelColor: colors.text,
-          unselectedLabelColor: colors.text.withValues(alpha: 0.4),
-        ),
+        // tabBarTheme: TabBarTheme(
+        //   labelColor: colors.text,
+        //   unselectedLabelColor: colors.text.withValues(alpha: 0.4),
+        // ),
         filledButtonTheme: FilledButtonThemeData(
           style: styles.buttonLarge.copyWith(
             backgroundColor: WidgetStateProperty.resolveWith((states) {
